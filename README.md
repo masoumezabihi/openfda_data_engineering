@@ -56,7 +56,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 Due to using a single-node cluster (free-tier), full Spark performance wasn’t utilized — but the architecture is ready for production-scale, multi-node clusters.
 
 ## Security & Best Practices
-In this project, Azure Storage credentials were configured directly in the Databricks cluster Spark configuration UI for simplicity and demonstration purposes.
+In this project, Azure Storage credentials were configured directly in the Databricks cluster Spark configuration UI for simplicity and demonstration purposes.<br>
 ⚠️ Note:
 Due to using a free-tier Databricks account, integration with Databricks Secret Scopes or Azure Key Vault was not possible.
 However, in a production environment, it is strongly recommended to manage secrets securely using these services to prevent exposure of sensitive data.
