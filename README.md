@@ -5,7 +5,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 - Designed for scale using Azure Databricks and Blob Storage
 - Emphasis on production readiness, unit testing, and cloud integration
 
-## Project Highlights
+### Project Highlights
 
 - Dataset: OpenFDA Adverse Event Data(~50GB)
 - Pipeline: Python prototype → PySpark ETL → Azure Databricks
@@ -13,7 +13,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 - Output Format: Apache Parquet
 - Testing: Pytest with mocks and Spark local sessions
 
-## Architecture Overview
+### Architecture Overview
 
 **Pipeline Flow:**
 - **Ingest**: Download OpenFDA JSON data and upload to Azure Blob using AzCopy
@@ -21,7 +21,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 - **Scale**: Refactor to PySpark, deploy on Azure Databricks
 - **Store**: Save cleaned data in Parquet format back to Azure Blob
 
-## Technologies Used
+### Technologies Used
 
 | Category        | Tools & Services                          |
 | --------------- | ----------------------------------------- |
@@ -33,7 +33,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 | Deployment      | Databricks Jobs, Spark Configurations     |
 
 
-## Testing & Validation
+### Testing & Validation
 
 - Unit tests written with pytest
 - Covers extractor, transformer, and loader modules
@@ -44,7 +44,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
   **Run tests locally**:<br> 
     pytest --cov=etl --cov-report=term-missing -v tests/
 
-## Execution Summary
+### Execution Summary
 
 | Stage                | Details                                          |
 | -------------------- | ------------------------------------------------ |
@@ -55,19 +55,19 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 
 Due to using a single-node cluster (free-tier), full Spark performance wasn’t utilized — but the architecture is ready for production-scale, multi-node clusters.
 
-## Security & Best Practices
+### Security & Best Practices
 In this project, Azure Storage credentials were configured directly in the Databricks cluster Spark configuration UI for simplicity and demonstration purposes.<br>
 ⚠️ Note:
 Due to using a free-tier Databricks account, integration with Databricks Secret Scopes or Azure Key Vault was not possible.
 However, in a production environment, it is strongly recommended to manage secrets securely using these services to prevent exposure of sensitive data.
 
-## Key Learnings
+### Key Learnings
 - Designing cloud-native, scalable ETL pipelines
 - Leveraging PySpark and Databricks for distributed data processing
 - Writing production-grade, testable data engineering code
 - Working with semi-structured data (JSON → Parquet)
 - Managing Azure resources (Blob Storage, credentials, cluster setup)
 
-## Contact
+### Contact
 For questions or feedback, feel free to connect on [LinkedIn](https://www.linkedin.com/in/masoume-zabihi-a7294338/)
 .
