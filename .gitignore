@@ -1,2 +1,3 @@
 # Ignore environment files
+step5_protyping_openfda_pipeline/.env
 step8_unit_test/.env
