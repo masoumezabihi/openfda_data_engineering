@@ -69,5 +69,5 @@ However, in a production environment, it is strongly recommended to manage secre
 - Managing Azure resources (Blob Storage, credentials, cluster setup)
 
 ## Contact
-For questions or feedback, feel free connect on [LinkedIn](https://www.linkedin.com/in/masoume-zabihi-a7294338/)
+For questions or feedback, feel free to connect on [LinkedIn](https://www.linkedin.com/in/masoume-zabihi-a7294338/)
 .
