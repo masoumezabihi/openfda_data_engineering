@@ -4,7 +4,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 - End-to-end ETL pipeline from raw JSON to clean Parquet
 - Designed for scale using Azure Databricks and Blob Storage
 - Emphasis on production readiness, unit testing, and cloud integration
-- 
+
 ## Project Highlights
 
 - Dataset: OpenFDA Adverse Event Data(~50GB)
