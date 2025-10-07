@@ -1,12 +1,10 @@
 # Capstone Project: Scalable Data Pipeline with PySpark & Azure
 
 Built a scalable, cloud-ready data pipeline using PySpark and Azure services to ingest, process, and store OpenFDA Adverse Event data.
-
-```bash
-✅ End-to-end ETL pipeline from raw JSON to clean Parquet
-✅ Designed for scale using Azure Databricks and Blob Storage
-✅ Emphasis on production readiness, unit testing, and cloud integration
-```
+- End-to-end ETL pipeline from raw JSON to clean Parquet
+- Designed for scale using Azure Databricks and Blob Storage
+- Emphasis on production readiness, unit testing, and cloud integration
+- 
 ## Project Highlights
 
 - Dataset: OpenFDA Adverse Event Data(~50GB)
@@ -18,7 +16,7 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 ## Architecture Overview
 
 **Pipeline Flow:**
-- Ingest: Download OpenFDA JSON data and upload to Azure Blob using AzCopy
-- Prototype: Develop local ETL pipeline in Python for exploration
-- Scale: Refactor to PySpark, deploy on Azure Databricks
-- Store: Save cleaned data in Parquet format back to Azure Blob
+- **Ingest**: Download OpenFDA JSON data and upload to Azure Blob using AzCopy
+- **Prototype**: Develop local ETL pipeline in Python for exploration
+- **Scale**: Refactor to PySpark, deploy on Azure Databricks
+- **Store**: Save cleaned data in Parquet format back to Azure Blob
