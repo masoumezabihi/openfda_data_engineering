@@ -31,3 +31,15 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 | Data Formats    | JSON (input), Parquet (output)            |
 | Testing         | Pytest, PySpark Local, Mocking Azure APIs |
 | Deployment      | Databricks Jobs, Spark Configurations     |
+
+
+## Testing & Validation
+
+- Unit tests written with pytest
+- Covers extractor, transformer, and loader modules
+- Includes edge cases and failure scenarios
+- Uses mocks for Azure Blob and PySpark sessions
+- Code coverage reports with pytest-cov
+
+Run tests locally:<br> 
+  pytest --cov=etl --cov-report=term-missing -v tests/
