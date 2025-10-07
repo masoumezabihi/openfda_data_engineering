@@ -20,3 +20,14 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 - **Prototype**: Develop local ETL pipeline in Python for exploration
 - **Scale**: Refactor to PySpark, deploy on Azure Databricks
 - **Store**: Save cleaned data in Parquet format back to Azure Blob
+
+## Technologies Used
+
+| Category        | Tools & Services                          |
+| --------------- | ----------------------------------------- |
+| Programming     | Python, PySpark                           |
+| Cloud & Storage | Azure Blob Storage, AzCopy                |
+| Compute         | Azure Databricks (Single-node cluster)    |
+| Data Formats    | JSON (input), Parquet (output)            |
+| Testing         | Pytest, PySpark Local, Mocking Azure APIs |
+| Deployment      | Databricks Jobs, Spark Configurations     |
