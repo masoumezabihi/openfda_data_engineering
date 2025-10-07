@@ -7,11 +7,11 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 
 ### Project Highlights
 
-- Dataset: OpenFDA Adverse Event Data(~50GB)
-- Pipeline: Python prototype → PySpark ETL → Azure Databricks
-- Storage: Azure Blob Storage for raw & processed data
-- Output Format: Apache Parquet
-- Testing: Pytest with mocks and Spark local sessions
+- **Dataset**: OpenFDA Adverse Event Data(~50GB)
+- **Pipeline**: Python prototype → PySpark ETL → Azure Databricks
+- **Storage**: Azure Blob Storage for raw & processed data
+- **Output Format**: Apache Parquet
+- **Testing**: Pytest with mocks and Spark local sessions
 
 ### Architecture Overview
 
