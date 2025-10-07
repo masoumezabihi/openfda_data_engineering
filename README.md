@@ -14,3 +14,11 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 - Storage: Azure Blob Storage for raw & processed data
 - Output Format: Apache Parquet
 - Testing: Pytest with mocks and Spark local sessions
+
+## Architecture Overview
+
+**Pipeline Flow:**
+- Ingest: Download OpenFDA JSON data and upload to Azure Blob using AzCopy
+- Prototype: Develop local ETL pipeline in Python for exploration
+- Scale: Refactor to PySpark, deploy on Azure Databricks
+- Store: Save cleaned data in Parquet format back to Azure Blob
