@@ -41,5 +41,32 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 - Uses mocks for Azure Blob and PySpark sessions
 - Code coverage reports with pytest-cov
 
-Run tests locally:<br> 
-  pytest --cov=etl --cov-report=term-missing -v tests/
+  **Run tests locally**:<br> 
+    pytest --cov=etl --cov-report=term-missing -v tests/
+
+## Execution Summary
+
+| Stage                | Details                                          |
+| -------------------- | ------------------------------------------------ |
+| **Local Testing**    | ~3GB data processed using PySpark on local setup |
+| **Cloud Deployment** | ~50GB processed on Azure Databricks              |
+| **Cluster Config**   | Storage keys configured via Spark UI             |
+| **Output**           | Parquet files written to Blob Storage            |
+
+Due to using a single-node cluster (free-tier), full Spark performance wasn’t utilized — but the architecture is ready for production-scale, multi-node clusters.
+
+## Security & Best Practices
+- .env and sensitive configs are excluded via .gitignore
+- Credentials used in development were stored in environment variables
+- For production: use Databricks Secret Scopes or Azure Key Vault
+
+## Key Learnings
+- Designing cloud-native, scalable ETL pipelines
+- Leveraging PySpark and Databricks for distributed data processing
+- Writing production-grade, testable data engineering code
+- Working with semi-structured data (JSON → Parquet)
+- Managing Azure resources (Blob Storage, credentials, cluster setup)
+
+## Contact
+For questions or feedback, feel free connect on [LinkedIn](https://www.linkedin.com/in/masoume-zabihi-a7294338/)
+.
