@@ -56,9 +56,10 @@ Built a scalable, cloud-ready data pipeline using PySpark and Azure services to 
 Due to using a single-node cluster (free-tier), full Spark performance wasn’t utilized — but the architecture is ready for production-scale, multi-node clusters.
 
 ## Security & Best Practices
-- .env and sensitive configs are excluded via .gitignore
-- Credentials used in development were stored in environment variables
-- For production: use Databricks Secret Scopes or Azure Key Vault
+In this project, Azure Storage credentials were configured directly in the Databricks cluster Spark configuration UI for simplicity and demonstration purposes.
+⚠️ Note:
+Due to using a free-tier Databricks account, integration with Databricks Secret Scopes or Azure Key Vault was not possible.
+However, in a production environment, it is strongly recommended to manage secrets securely using these services to prevent exposure of sensitive data.
 
 ## Key Learnings
 - Designing cloud-native, scalable ETL pipelines
